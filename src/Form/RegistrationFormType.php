@@ -12,6 +12,8 @@ use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Validator\Constraints\Length;
 use Symfony\Component\Validator\Constraints\NotBlank;
+use Symfony\Component\Form\Extension\Core\Type\RepeatedType;
+
 
 class RegistrationFormType extends AbstractType
 {
@@ -62,7 +64,7 @@ class RegistrationFormType extends AbstractType
             ->add('submit', SubmitType::class, [
                 'label' => 'M\'inscrire',
                 'attr' => [
-                    'class' => 'rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
+                    'class' => 'rounded-md bg-indigo text-center py-3'
                 ]
             ])
         ;
